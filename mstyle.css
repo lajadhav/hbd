@@ -1,0 +1,462 @@
+#mainsection header{
+    background: #333; 
+    color: limegreen;
+    width: 100%;
+    height: 10%;
+    top: 0%;
+    padding: 0.5%;
+    margin: auto;
+    text-align: center;
+}
+#mainsection h1{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 200%;
+}
+
+.hr2{
+    border: 10px solid crimson;
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#mainsection #maincontainer{
+    height: 100%;
+    width: 100%;
+    background-color: cyan;
+    position: absolute;
+}
+
+#mainsection .leftblock, .rightblock{
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    background-image: url("mainimg/sidetexture3.jpg");
+  }
+
+#mainsection .leftblock{
+    float: left;
+}
+#mainsection .rightblock{
+    float: right;
+}
+
+#mainsection .leftblock img{
+    height: 50%;
+    width: 100%;
+    object-fit: scale-down;
+  }
+
+#mainsection .rightblock img{
+    height: 50%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+#mainsection .centralblock{
+    margin: auto;
+    float: left;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+  }
+
+#mainsection #mainimg{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin: auto;
+    object-fit: cover;
+}
+
+#mainsection #mainmsg{
+    margin: auto;
+    width: 80%;
+}
+
+#mainsection button{
+    padding: 1%;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    width: 20%;
+    height: 2%;
+    cursor: pointer;
+    
+  }
+  
+  #mainsection #button1, #button3{
+    background: limegreen;
+    color:  #333;
+  }
+  #mainsection #button1 img, #button3 img{
+    width: 90%;
+    height: 90%;
+  }
+  
+  #mainsection #button2{
+    background: crimson;
+    color: #ffffff;
+  }
+  #mainsection #button2 img{
+    width: 100%;
+    height: 100%;
+  }
+  
+button:hover {
+    border: 1px solid #777;
+  }
+  
+
+
+#catsection{
+    height: 100%;
+    width: 100%;
+    top: 120%;
+    background-image: url("mainimg/sidetexture1.jpg");
+    position: absolute;
+}
+
+#catsection .hr1{
+    border: 10px solid #333;
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#catsection .mySlides {
+    display:none;
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#catsection .mySlides img{
+  object-fit:contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#catsection .mySlides video{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#catsection .slidercontainer{
+  background-color:lightgray ;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  top: 10%;
+  position: relative;
+  border: #333 5px solid;
+}
+
+#catsection .sliderbutton1{
+  background-color: darkgrey;
+  width: 50px;
+  height: 50px;
+  top: -55%;
+  left: 0%;
+  position: relative;
+  opacity: 70%;
+  
+}
+#catsection .sliderbutton2{
+  background-color: darkgrey;
+  width: 50px;
+  height: 50px;
+  top: -55%;
+  left: 88.5%;
+  opacity: 70%;
+  position: relative;
+}
+
+#catsection .slidercontent{
+  background-color: #333;
+  opacity: 70%;
+  bottom: 0%;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+
+#dogsection{
+  height: 100%;
+  width: 100%;
+  top: 220%;
+  background-image: url("mainimg/sidetexture5.jpg");
+  position: absolute;
+}
+
+#dogsection .dogtext{
+  width: 45%;
+  height: 20%;
+  background: darkcyan;
+  padding: 3px;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+}
+
+#dogsection .dogtext #p1{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ffffff;
+  top: 7%;
+  left: 3%;
+  text-align: left;
+  position: relative;
+  margin:auto;
+}
+#dogsection .dogtext #p2{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ffffff;
+  top: 8%;
+  right: 3%;
+  text-align: right;
+  position: relative;
+  margin:auto;
+}
+
+#dogsection .dogpee img{
+  width: 50%;
+  height: 25%;
+  left: 15%;
+  top: 50%;
+  position: absolute;
+}
+
+#dogsection .hr1{
+  border: 10px solid #333;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+#dogsection #video{
+  left: 70%;
+  top: 8%;
+  position: relative;
+}
+
+#dogsection video{
+   width: 22.5%;
+   height: 40%;
+   position: relative;
+   object-fit: contain;
+   cursor: pointer;
+}
+
+#mysection{
+  height: 100%;
+  width: 100%;
+  top: 320%;
+  background-image: url("mainimg/sidetexture10.jpg") ;
+  position: absolute;
+}
+
+#mysection .hr1{
+  border: 10px solid #333;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+
+div.gallery {
+  border: 1px solid crimson;
+  float: left;
+  width: 160px;
+  /*-webkit-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);*/
+  -webkit-animation: spin 10s reverse infinite;
+}
+
+@-webkit-keyframes spin {
+  0%  {-webkit-transform: rotate(-5deg);}
+  25%  {-webkit-transform: rotate(0deg);}
+  50% {-webkit-transform: rotate(5deg);}
+  75% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(-5deg);}   
+}
+
+.pin{
+  width: 10%;
+  height: 10%;
+  top: -50%;
+  left: 45%;
+  position: absolute;
+  
+}
+.pin img{
+  
+  object-fit: contain;
+  position: absolute;
+}
+
+div.gallery:hover {
+  border: 3px solid #333;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 160px;
+}
+
+
+div#img1{
+  position: absolute;
+  left: 5%;
+  top: 10%;
+}
+
+div#img2{
+  position: absolute;
+  right: 5%;
+  top: 10%;
+}
+
+div#img3{
+  position: absolute;
+  left: 12%;
+  top: 40%;
+}
+
+div#img4{
+  position: absolute;
+  right: 12%;
+  top: 40%;
+}
+
+div#img5{
+  position: absolute;
+  left: 5%;
+  top: 70%;
+}
+
+div#img6{
+  position: absolute;
+  right: 5%;
+  top: 70%;
+}
+
+#mysection .postcard{
+  width: 40%;
+  height: 50%;
+  left: 30%;
+  top: 30%;
+  position: absolute;
+  cursor: pointer;
+}
+
+
+
+#last{
+  position: relative;
+  top: 93%;
+  width: 100%;
+  text-align: center;
+  text-shadow: #e4c124;
+  background-color: #333;
+  color: wheat;
+  margin: auto;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer{
+  position: relative;
+  top: 90%;
+  width: 100%;
+  text-align: center;
+  background-color: crimson;
+  color: rgb(255, 255, 255);
+  margin: auto;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#mainsection .nextbutton button{
+  margin-top: 3%;
+  background-color: #777;
+  color: #ffffff;
+  width: 10%;
+  height: 1%;
+  left: 0%;
+  bottom: 200%;
+  position: relative;
+}
+
+#catsection .nextbutton button{
+  margin-top: 1%;
+  background-color: #777;
+  color: #ffffff;
+  width: 8%;
+  height: 5%;
+  left: 46%;
+  bottom: 100%;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#dogsection .nextbutton button{
+  margin-top: 5%;
+  background-color: #777;
+  color: #ffffff;
+  width: 8%;
+  height: 5%;
+  left: 46%;
+  bottom: 100%;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#mysection .nextbutton button{
+  margin-top: 5%;
+  background-color: #777;
+  color: #ffffff;
+  width: 8%;
+  height: 5%;
+  left: 46%;
+  top: 85%;
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#finalsection{
+  background-image: url("pics/inCollage_20210223_120623040.jpg");
+  background-repeat: round;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  top: 420%;
+  position: absolute;
+}
+#finalsection h2{
+  color:white;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-style: italic;
+  text-align: center;
+  font-size: 60px;
+  top: 36%;
+  position: relative;
+  filter: drop-shadow(3px 3px black);
+}
+
+#finalsection p{
+  color:white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 15px;
+  top: 45%;
+  position: relative;
+  filter: drop-shadow(3px 3px black);
+}

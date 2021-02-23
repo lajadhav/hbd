@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD</title>
+    <link rel="stylesheet" href="mstyle.css">
+</head>
+<body>
+
+    <div id="mainsection">
+
+        <header>
+            <h1>Welcome to Pawri!</h1>
+        </header>
+      
+        <hr class="hr2">
+        <div id="maincontainer">
+
+            <div class="leftblock">
+                <img src="mainimg/baloon3.gif" alt="">
+				<img src="mainimg/baloon2.gif" alt="">
+            </div>
+
+            <div class="centralblock">
+
+                <div>
+                    <img src="mainimg/mainimg11.gif" id ="mainimg">
+                </div>
+                
+                <br>
+                <div id="mainmsg">
+                    <p>To Boldest, Strongest, Weirdest, Awesome </p>
+                    <p>and most favourite.</p>
+                </div>
+                <br>
+
+                <section class="button">
+                    <button onclick="window.location='#catsection'" id="button1"> MEOW </button>
+                    <button onclick="window.location='#dogsection'" id="button2">WOOF</button>
+                    <button onclick="window.location='#mysection'" id="button3">LOL</button>
+                </section>
+
+                <section class="nextbutton">
+                <button onclick="window.location='#catsection'" id="button3">NEXT</button>
+                </section>
+            </div>
+
+            <div class="rightblock">
+                <img src="mainimg/baloon4.gif" alt="">
+				<img src="mainimg/baloon1.gif" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div id="catsection">
+
+        <hr class="hr1">
+        <hr class="hr2">
+
+        <div class="slidercontainer">
+            <div class="mySlides">
+                <img src="catimg/black.jpg" style="width:100%">
+                <div class="slidercontent"><p>When you were looking made for each other</p></div>
+            </div>
+            
+            <div class="mySlides">
+                <img src="catimg/white.jpg" style="width:100%">
+                <div class="slidercontent"><p>When I cant figure out who's lazier!</p></div>
+            </div>
+
+            <div class="mySlides">
+                <img src="catimg/tummy.jpg" style="width:100%">
+                <div class="slidercontent"><p>When she's on ur tummy and matching to ur t-shirt!</p></div>
+            </div>
+
+            <div class="mySlides">
+                <img src="catimg/snuggle.jpg" style="width:100%">
+                <div class="slidercontent"><p>And when she snuggled up next to you!</p></div>
+            </div>
+
+            <div class="mySlides">
+                <img src="catimg/beauty.jpg" style="width:100%">
+                <div class="slidercontent"><p>When she isn't just a beauty!</p></div>
+            </div>
+
+            <div class="mySlides">
+                <img src="catimg/listening.jpg" style="width:100%">
+                <div class="slidercontent"><p>Goldy listening Rahat Fateh Ali Khan is only here coz I couldnt find more pics</p></div>
+            </div>
+
+            <div class="mySlides">
+                <video controls>
+                    <source src="catimg/meow.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                  </video>
+                <div class="slidercontent"><p>And this crazy impersonation</p></div>
+            </div>
+            
+			<button class="sliderbutton1" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="sliderbutton2" onclick="plusDivs(1)">&#10095;</button>
+            
+            <section class="nextbutton">
+                <button onclick="window.location='#dogsection'" id="button3">NEXT</button>
+            </section>
+        
+        </div>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			
+			function plusDivs(n) {
+              showDivs(slideIndex += n);
+              if (n==1) {var audio = new Audio('meowaudio/smallmeow.mp3');audio.play();}
+              if (n==-1) {var audio = new Audio('meowaudio/rudemeow.mp3');audio.play();}
+			}
+			
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1;}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+
+		</script>
+
+    </div>
+
+
+
+
+    <div id="dogsection">
+
+        <hr class="hr1">
+        <hr class="hr2">
+
+        <div class="dogtext">
+            <p id="p1"> Hey Hooman, <br>
+                Thank you so much for caring and giving so much attention to us. <br>
+                Here's a lil gift from us on your birthday!
+            </p>
+            <p id="p2">~Truly Yours,<br>Street Dogs Club</p>
+        </div>
+
+        <div class="dogpee">
+            <a href="mainimg/dogpee.png"><img src="mainimg/dogpee.png" alt=""></a>
+            
+        </div>
+
+        <div  id="video">
+            <video controls>
+                <source src="HeyHooman1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+        </div>
+
+        <section class="nextbutton">
+            <button onclick="window.location='#mysection'" id="button3">NEXT</button>
+        </section>
+
+    </div>
+
+
+    
+    <div id="mysection">
+
+        <hr class="hr1">
+        <hr class="hr2">
+
+        <div class="up">
+            <div class="gallery" id="img1">
+                <div  class="pin"><img src="mainimg/pin2.png" alt=""></div>
+                <img src="pics/trainfilter.jpg">
+                <div class="desc"></div>
+            </div>
+            <div class="gallery" id="img2">
+                <div  class="pin"><img src="mainimg/pin2.png" alt=""></div>
+                <img src="pics/traditional.jpg">
+                <div class="desc"></div>
+            </div>
+        </div>
+
+        <div class="mid">
+            
+            <div class="gallery" id="img3">
+                <div  class="pin"><img src="mainimg/pin2.png" alt=""></div>
+                <img src="pics/vcbig.jpg">
+                <div class="desc"></div>
+            </div>
+        
+            <div class="gallery" id="img4">
+                <div  class="pin"><img src="mainimg/pin2.png" alt=""></div>
+                <img src="pics/trainxyz.jpg">
+                <div class="desc"></div>
+            </div>
+
+        </div>
+        
+        <div class="down">
+            
+            <div class="gallery" id="img5">
+                <div  class="pin"><img src="mainimg/pin2.png" alt=""></div>
+                <img src="pics/marathon.jpg">
+                <div class="desc"></div>
+            </div>
+        
+            <div class="gallery" id="img6">
+                <div  class="pin"><img src="mainimg/pin2.png" alt=""></div>
+                <img src="pics/vcsmall.jpg">
+                <div class="desc"></div>
+            </div>
+
+        </div>
+
+        <script language="javascript" type="text/javascript">
+            function chngimg() {
+                var img = document.getElementById('imgplus').src;
+                if (img.indexOf('mainimg/postcard.png')!=-1) {
+                    document.getElementById('imgplus').src  = 'mainimg/backpage.png';
+                }
+                 else {
+                   document.getElementById('imgplus').src = 'mainimg/postcard.png';
+               }
+            }
+        </script>
+
+        <img class="postcard" id="imgplus" src="mainimg/postcard.png" onclick="chngimg()"/>
+
+        <section class="nextbutton">
+            <button onclick="window.location='#finalsection'" id="button3">NEXT</button>
+        </section>
+    </div>
+
+    <div id="finalsection">
+        <p>Cheers! To memories with you!</p>
+        <h2>Good Night</h2>
+    </div>
+    
+</body>
+</html>
